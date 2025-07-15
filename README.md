@@ -2,7 +2,7 @@
 
 ---
 
-## 📑 Section 1: Basic / Low Difficulty Questions
+## 📑 Section 1: 📗 Basic / Low Difficulty Questions
 
 | #  | Question                                      | Answer                                                                                                   |
 | :- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,7 @@
 | 10 | How to delete a file?                         | `rm filename`                                                                                            |
 
 ---
-## 📑 Section 2: Moderate / Mid-Level Questions
+## 📑 Section 2: 📘 Moderate / Mid-Level Questions
 
 | #  | Question                                    | Answer                                                               |
 | :- | :------------------------------------------ | :------------------------------------------------------------------- |
@@ -35,7 +35,7 @@
 
 ---
 
-## 📑 Section 3: Advanced / High-Level Questions
+## 📑 Section 3: 📕 Advanced / High-Level Questions
 
 | #  | Question                              | Answer                                                                  |
 | :- | :------------------------------------ | :---------------------------------------------------------------------- |
@@ -79,7 +79,7 @@
 | 44 | Schedule cleanup of `/tmp` at midnight daily       | Cron job: `0 0 * * * rm -rf /tmp/*`                  |          |           |
 | 45 | Create a soft link and hard link for a file        | `ln file hardlink` and `ln -s file softlink`         |          |           |
 | 46 | Install Apache and host a static website           | `yum install httpd` or `apt install apache2`         |          |           |
-| 47 | Find top 5 largest files in `/var`                 | \`find /var -type f -exec du -h {} +                 | sort -rh | head -5\` |
+| 47 | Find top 5 largest files in `/var`                 | \`find /var -type f -exec du -h {} +                 | sort -rh | head -5   |
 | 48 | Setup local YUM repository                         | Mount ISO, create `repo` file in `/etc/yum.repos.d/` |          |           |
 | 49 | Generate system report with CPU, Memory, Disk info | Combine `lscpu`, `free -m`, `df -h` in a script      |          |           |
 | 50 | Create Docker image with Apache installed          | Write Dockerfile, build image, run container         |          |           |
@@ -202,7 +202,7 @@
 | 117 | How to monitor real-time network connections?   | `netstat -tunap` or `ss -tunap`                          |
 | 118 | How to configure Nginx reverse proxy?           | Install Nginx → Edit `nginx.conf` to set `proxy_pass`    |
 | 119 | How to install Kubernetes minikube on Linux?    | Download binary → `chmod +x` → move to `/usr/local/bin/` |
-| 210 | How to test TCP/UDP connectivity?               | `nc -zv host port`                                       |
+| 120 | How to test TCP/UDP connectivity?               | `nc -zv host port`                                       |
 
 ---
 
@@ -210,16 +210,16 @@
 
 | #   | Question                                                 | Answer                                                                |
 | :-- | :------------------------------------------------------- | :-------------------------------------------------------------------- |
-| 201 | How to disable root SSH login?                           | Edit `/etc/ssh/sshd_config` → `PermitRootLogin no`                    |
-| 202 | How to set a firewall rule to allow SSH only?            | `firewall-cmd --permanent --add-service=ssh` → `--reload`             |
-| 203 | How to set password complexity policy?                   | Modify `/etc/login.defs` and PAM modules                              |
-| 204 | How to list currently open ports?                        | `ss -tulnp`                                                           |
-| 205 | How to audit file access logs?                           | `auditd` → configure rules in `/etc/audit/audit.rules`                |
-| 206 | How to check failed login attempts?                      | `lastb` or check `/var/log/secure` or `/var/log/auth.log`             |
-| 207 | What is AppArmor and how does it differ from SELinux?    | Mandatory Access Control tool like SELinux, but path-based            |
-| 208 | How to disable USB devices on a Linux server?            | Blacklist USB kernel modules in `/etc/modprobe.d/` config             |
-| 209 | How to check if your system is under brute-force attack? | Check `/var/log/secure`, use `fail2ban` logs                          |
-| 210 | How to enable password history restriction?              | Configure `pam_unix.so` with `remember=N` in `/etc/pam.d/system-auth` |
+| 121 | How to disable root SSH login?                           | Edit `/etc/ssh/sshd_config` → `PermitRootLogin no`                    |
+| 122 | How to set a firewall rule to allow SSH only?            | `firewall-cmd --permanent --add-service=ssh` → `--reload`             |
+| 123 | How to set password complexity policy?                   | Modify `/etc/login.defs` and PAM modules                              |
+| 124 | How to list currently open ports?                        | `ss -tulnp`                                                           |
+| 125 | How to audit file access logs?                           | `auditd` → configure rules in `/etc/audit/audit.rules`                |
+| 126 | How to check failed login attempts?                      | `lastb` or check `/var/log/secure` or `/var/log/auth.log`             |
+| 127 | What is AppArmor and how does it differ from SELinux?    | Mandatory Access Control tool like SELinux, but path-based            |
+| 128 | How to disable USB devices on a Linux server?            | Blacklist USB kernel modules in `/etc/modprobe.d/` config             |
+| 129 | How to check if your system is under brute-force attack? | Check `/var/log/secure`, use `fail2ban` logs                          |
+| 130 | How to enable password history restriction?              | Configure `pam_unix.so` with `remember=N` in `/etc/pam.d/system-auth` |
 
 ---
 ## 👨‍💻 Author
