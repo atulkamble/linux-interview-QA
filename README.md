@@ -222,3 +222,12 @@
 | 210 | How to enable password history restriction?              | Configure `pam_unix.so` with `remember=N` in `/etc/pam.d/system-auth` |
 
 ---
+## 👨‍💻 Author
+
+**Atul Kamble**
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/atuljkamble)
+- 🐙 [GitHub](https://github.com/atulkamble)
+- 🐦 [X](https://x.com/Atul_Kamble)
+- 📷 [Instagram](https://www.instagram.com/atuljkamble)
+- 🌐 [Website](https://www.atulkamble.in)
