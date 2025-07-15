@@ -1,4 +1,4 @@
-# 📘 Full Linux Interview Q\&A Collection (200+ Questions)
+# 📘 Full Linux Interview Q\&A Collection (100+ Questions)
 
 ---
 
