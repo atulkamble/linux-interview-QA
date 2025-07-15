@@ -226,8 +226,8 @@
 
 **Atul Kamble**
 
-- 💼 [LinkedIn:atuljkamble](https://www.linkedin.com/in/atuljkamble)
-- 🐙 [GitHub:atulkamble](https://github.com/atulkamble)
-- 🐦 [X:atul_kamble](https://x.com/Atul_Kamble)
-- 📷 [Instagram:atuljkamble](https://www.instagram.com/atuljkamble)
-- 🌐 [Website:wwww.atulkamble.in](https://www.atulkamble.in)
+- 💼 [LinkedIn: atuljkamble](https://www.linkedin.com/in/atuljkamble)
+- 🐙 [GitHub: atulkamble](https://github.com/atulkamble)
+- 🐦 [X: atul_kamble](https://x.com/Atul_Kamble)
+- 📷 [Instagram: atuljkamble](https://www.instagram.com/atuljkamble)
+- 🌐 [Website: wwww.atulkamble.in](https://www.atulkamble.in)
