@@ -2,6 +2,10 @@
 
 ---
 
+# 📘 Full Linux Interview Q\&A Collection (100+ Questions) 
+
+---
+
 ## 📑 Section 1: 📗 Basic / Low Difficulty Questions
 
 | #  | Question                                      | Answer                                                                                                   |
@@ -11,27 +15,27 @@
 | 3  | Command to list files including hidden files? | `ls -a`                                                                                                  |
 | 4  | How to create a directory?                    | `mkdir dirname`                                                                                          |
 | 5  | How to view file content?                     | `cat filename`                                                                                           |
-| 6  | How to display the first 10 lines of a file?  | `head filename`                                                                                          |
-| 7  | How to display the last 10 lines?             | `tail filename`                                                                                          |
+| 6  | How to display the first 10 lines of a file?  | `head -n 10 filename`                                                                                    |
+| 7  | How to display the last 10 lines?             | `tail -n 10 filename`                                                                                    |
 | 8  | How to copy files?                            | `cp source destination`                                                                                  |
 | 9  | How to move/rename files?                     | `mv source destination`                                                                                  |
-| 10 | How to delete a file?                         | `rm filename`                                                                                            |
+| 10 | How to delete a file?                         | `rm filename`      
 
 ---
 ## 📑 Section 2: 📘 Moderate / Mid-Level Questions
 
-| #  | Question                                    | Answer                                                               |
-| :- | :------------------------------------------ | :------------------------------------------------------------------- |
-| 11 | What does `chmod 755 file` do?              | Sets permissions: owner (7) = rwx, group (5) = r-x, others (5) = r-x |
-| 12 | How to find the size of a directory?        | `du -sh directory/`                                                  |
-| 13 | Difference between hard link and soft link? | Hard link: same inode, Soft link: shortcut with different inode      |
-| 14 | How to check CPU usage?                     | `top` or `htop`                                                      |
-| 15 | Command to list all running services?       | `systemctl list-units --type=service`                                |
-| 16 | How to restart the networking service?      | `systemctl restart network` (RHEL/CentOS)                            |
-| 17 | How to check system uptime?                 | `uptime`                                                             |
-| 18 | How to display disk partitions?             | `lsblk`                                                              |
-| 19 | How to mount a filesystem?                  | `mount /dev/sdX /mnt/point`                                          |
-| 20 | How to view system logs?                    | `journalctl` or `/var/log/messages`                                  |
+| #  | Question                                    | Answer                                                                                    |
+| :- | :------------------------------------------ | :---------------------------------------------------------------------------------------- |
+| 11 | What does `chmod 755 file` do?              | Sets permissions: owner (7) = rwx, group (5) = r-x, others (5) = r-x                      |
+| 12 | How to find the size of a directory?        | `du -sh directory/`                                                                       |
+| 13 | Difference between hard link and soft link? | Hard link: same inode, can’t span filesystems; Soft link: shortcut with a different inode |
+| 14 | How to check CPU usage?                     | `top` or `htop`                                                                           |
+| 15 | Command to list all running services?       | `systemctl list-units --type=service`                                                     |
+| 16 | How to restart the networking service?      | `systemctl restart network` (RHEL/CentOS)                                                 |
+| 17 | How to check system uptime?                 | `uptime`                                                                                  |
+| 18 | How to display disk partitions?             | `lsblk`                                                                                   |
+| 19 | How to mount a filesystem?                  | `mount /dev/sdX /mnt/point`                                                               |
+| 20 | How to view system logs?                    | `journalctl` or `/var/log/messages`                                                       |
 
 ---
 
@@ -117,7 +121,7 @@
 | 67 | How to debug a kernel panic?                                 | Check `/var/log/messages`, `journalctl -xb`, console output                                       |
 | 68 | How to compile a custom Linux kernel?                        | Download source, configure with `make menuconfig`, `make`, `make modules_install`, `make install` |
 | 69 | What is `initrd` or `initramfs`?                             | Temporary root file system used during boot before actual root filesystem is mounted              |
-| 70 | What is `strace` and how is it useful?                       | A diagnostic tool to trace system calls by a program                                              |
+| 70 | What is `strace` and how is it useful? | Diagnostic tool to trace system calls made by a process. Example: `strace -p <pid>` or `strace ./binary`                |                                      
 
 ---
 
@@ -134,7 +138,7 @@
 | 77 | How to view mounted filesystems?              | `mount` or `findmnt`                                      |
 | 78 | Difference between RAID 0, 1, 5, and 10?      | 0: striping, 1: mirroring, 5: parity, 10: striped mirrors |
 | 79 | How to check RAID status?                     | `cat /proc/mdstat`                                        |
-| 80 | How to create a software RAID in Linux?       | `mdadm --create`                                          |
+| 80 | How to create a software RAID in Linux?       | `mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sd[b-c]` |
 
 ---
 
@@ -144,7 +148,7 @@
 | :-- | :----------------------------------------- | :------------------------------------------------------------------ |
 | 81 | Command to display IP addresses?           | `ip addr`                                                           |
 | 82 | How to configure static IP on Linux?       | Edit `/etc/sysconfig/network-scripts/ifcfg-ethX` or `/etc/netplan/` |
-| 83 | How to flush the DNS cache?                | `systemd-resolve --flush-caches` (systemd)                          |
+| 83 | How to flush the DNS cache? | `systemd-resolve --flush-caches` (systemd-based), or `sudo service nscd restart` for non-systemd |
 | 84 | How to test DNS resolution?                | `dig`, `nslookup`                                                   |
 | 85 | How to check open TCP/UDP ports?           | `ss -tulnp`                                                         |
 | 86 | How to capture network packets?            | `tcpdump`                                                           |
@@ -201,7 +205,7 @@
 | 116 | How to copy SSH public key to another server?   | `ssh-copy-id user@host`                                  |
 | 117 | How to monitor real-time network connections?   | `netstat -tunap` or `ss -tunap`                          |
 | 118 | How to configure Nginx reverse proxy?           | Install Nginx → Edit `nginx.conf` to set `proxy_pass`    |
-| 119 | How to install Kubernetes minikube on Linux?    | Download binary → `chmod +x` → move to `/usr/local/bin/` |
+| 119 | How to install Kubernetes minikube on Linux? | Download binary: `curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64` → `chmod +x` → move to `/usr/local/bin/` |
 | 120 | How to test TCP/UDP connectivity?               | `nc -zv host port`                                       |
 
 ---
