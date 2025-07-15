@@ -1,8 +1,4 @@
-# 📘 Full Linux Interview Q\&A Collection (100+ Questions)
-
----
-
-# 📘 Full Linux Interview Q\&A Collection (100+ Questions) 
+# 📘 Full Linux Interview Q\&A Collection (100+ Questions) by @atulkamble
 
 ---
 
